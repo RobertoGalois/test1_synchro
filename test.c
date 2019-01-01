@@ -33,11 +33,7 @@ char	*ft_strdup(char *str)
 		init = ret;
 
 		while ((*str) != '\0')
-		{
-			*ret = *str;
-			ret++;
-			str++;
-		}
+			*(ret++) = *(str++);
 
 		*ret = '\0';
 	}
